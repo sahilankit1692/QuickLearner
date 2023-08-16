@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<!--Swiper JS-->
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+
+</head>
+
+<body>
+    <nav>
+        <div class="container nav_container">
+        <a href="index.html"><h4>Quick Learner</h4></a>
+        <ul class="nav_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+              </ul>
+             <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+             <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+          </div>  
+
+    </nav>
+<!--=========   End of NAVBAR =========-->
+
+<section class="contact">
+    <div class="container contact_container">
+        <aside class="contact_aside">
+            <div class="aside_image">
+                <img src="contact.gif">
+            </div>
+            <h2>Contact Us</h2>
+            <p>Our "Contact Us" page offers a streamlined and user-friendly way to get in touch.</p>
+            <ul class="contact_details">
+                <li>
+                    <i class="uil uil-phone-times"></i>
+                    <h5>+05414250625</h5>
+                </li>
+                <li>
+                    <i class="uil uil-envelope"></i>
+                    <h5>support@learner</h5>
+                </li>
+                <li>
+                    <i class="uil uil-location-point"></i>
+                    <h5>Vasundhara Sector10</h5>
+                </li>
+            </ul>
+            <ul class="contact_socials">
+                <li><a href="https://facebook.com"><i class="uil uil-facebook-f"></i></a></li>
+               <li><a href="https://instagram.com" target="_blank"><i class="uil uil-instagram"></i></a></li>
+               <li><a href="https://twitter.com" target="_blank"><i class="uil uil-twitter-alt"></i></a></li>
+               <li><a href="https://linkedin.com" target="_blank"><i class="uil uil-linkedin"></i></a></li>
+            </ul>
+        </aside>
+
+        <form class="contact_form">
+            <div class="form_name">
+                <input type="text" name="First Name" placeholder="First Name" required>
+                <input type="text" name="Last Name" placeholder="Last Name" required>
+            </div>
+            <input type="email" name="Email Address" placeholder="Your Email Address" required>
+            <textarea name="Message" rows="7" placeholder="Message" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <div class="container footer_container">
+        <div class="footer_1">
+            <a href="index.html" class="footer_logo"><h4>Quick Learner</h4></a>
+            <p>
+                Clearly outline your website's terms of use, privacy policy, and any other relevant policies to set expectations and establish transparency.
+            </p>
+        </div>
+       <div class="footer_2">
+        <h4>Permalinks</h4>
+        <ul class="permalinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+       </div>      
+        <div class="footer_3">
+            <h4>Privacy</h4>
+            <ul class="privacy">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Refund Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer_4">
+            <h4>Contact Us</h4>
+            <div>
+                <p>+917318128881</p>
+                <p>sahilankit1692@gmail.com</p>
+            </div>
+            <ul class="footer_social">
+                <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
+                <li><a href="#"><i class="uil uil-instagram-alt"></i></a></li>
+                <li><a href="#"><i class="uil uil-twitter"></i></a></li>
+                <li><a href="#"><i class="uil uil-linkedin-alt"></i></a></li>
+            </ul>
+        </div>
+       
+        
+    </div>
+    <div class="footer_copyright">
+        <small>footer_copyright &copy; Sahil Srivastava</small>
+    </div>
+</footer>
+    
+
+
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+           slidesPerView: 1,
+           spaceBetween: 30,
+           pagination: {
+             el: ".swiper-pagination",
+             clickable: true,
+           },
+           //when window width is>=600px
+           breakpoints:{
+            600:{
+                slidesPerView:2,
+            }
+           }
+         });s
+       </script>
+
+
+
+</body>
+</html>
